@@ -16,6 +16,10 @@ app.use(cookieParser())
 app.use('/', authRouter)
 app.use('/', blogRouter)
 
+app.get('/', (req, res)=>{
+    res.send('welcome to my blog application')
+})
+
 app.listen(PORT, ()=>{
     console.log(`Server is listening on port ${PORT}`);
 })
