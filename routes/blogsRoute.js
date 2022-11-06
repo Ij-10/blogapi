@@ -47,7 +47,7 @@ blogRouter.post('/blogs', validateToken, (req, res)=>{
 })
 
 // update blog
-blogRouter.update('/blogs/:id', validateToken, (req, res)=>{
+blogRouter.put('/blogs/:id', validateToken, (req, res)=>{
     const id = req.params.id
     const blog = req.body
 
